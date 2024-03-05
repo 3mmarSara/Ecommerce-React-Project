@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter:wght@500;700&family=Poppins:wght@400;700&family=Roboto:wght@700&display=swap');
+
+.categories-section{
+     margin: 50px 100px 0px 100px !important;
+}
+
+.categories-section .categories-header{
+    margin-bottom: 50px;
+    border-bottom: 2px solid #EDEDED;
+}
+
+.categories-section .categories-header h2{
+    width: fit-content;
+    font-size: 34px;
+     font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    color: #666666;
+    margin: 0px;
+    padding-bottom: 24px;
+    border-bottom: 5px solid #008ECC;
+}
+
+.categories-section .categories-header h2 span{
+    color: #008ECC;
+}
+
+.swiper{
+    /* margin: 100px 100px 0px 100px; */
+    padding: 50px 0px 40px 0px;
+    /* background-color: rgb(147, 142, 142); */
+    --swiper-theme-color: #666666;
+}
+.swiperSlide{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+.swiperSlide img{
+   width: 50%;
+}
+
+p{
+    text-align: center;
+    font-size: 27px;
+}
+
+.loader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
