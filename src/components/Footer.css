@@ -1,0 +1,226 @@
+.footer{
+    margin-top: 100px;
+    background-color: #2974A3;
+    padding: 50px 100px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.footer::after{
+    content: "";
+    top:0px;
+    right: 0px;
+    position: absolute;
+    transform: translateY(-30%) translateX(40%);
+    width: 570px;
+    height: 570px;
+    background-color: #3089c0cb;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.footer::before{
+    content: "";
+    top:0px;
+    right: 0px;
+    transform: translateY(-30%) translateX(40%);
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 1px solid #3089c0cb;
+    z-index: 1;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+    z-index: 2;
+
+}
+
+.footer-content .Col{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-content .Col .logo{
+    font-size: 42px;
+    font-weight: 600;
+    
+}
+
+.footer-content .Col .section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-content .Col .section .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.footer-content .Col .section .contact .icon{
+    font-size: 20px;
+}
+
+.footer-content .Col .section .contact h4{
+    margin: 0px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content .Col .section .contact span{
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.footer-content .Col .section-title{
+    font-size: 20px;
+}
+
+.footer-content .images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-content .images .image-download{ 
+    height: 60px;
+    cursor: pointer;
+}
+
+.footer-content .Col .title{
+    font-size: 20px;
+    border-bottom: 2px solid;
+    padding-bottom: 8px;
+    width: fit-content;
+}
+
+.footer-content .Col ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-content .Col ul li{
+    cursor: pointer;
+}
+
+.footer-content .Col ul li:hover{
+    color: black;
+}
+
+.copy-right{
+    padding-top: 30px;
+    font-weight:lighter;
+    letter-spacing: 1.5px;
+    border-top: 1px solid #3089c0cb;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-right span{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1440px){
+    .footer{
+        padding: 50px 60px 20px 60px;
+    }
+
+    .footer-content{
+        gap: 100px;
+    }
+
+    .footer-content .Col .logo{
+        font-size: 38px;
+    }
+
+        
+    .footer-content .Col .section .contact{
+        font-size: 16px;
+    }
+
+    .footer-content .Col .section .contact .icon{
+        font-size: 24px;
+    }
+
+    .footer-content .Col .section .contact span{
+        margin-left: 40px;
+        font-size: 14px;
+    }
+
+    .footer-content .Col .section-title{
+        font-size: 18px;
+    }
+
+    .footer-content .images .image-download{ 
+        height: 50px;
+    }
+
+    .footer-content .Col .title{
+        font-size: 18px;
+    }
+
+    .footer-content .Col ul{
+        gap: 18px;
+    }
+
+    .copy-right{
+        gap: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 900px){
+    .footer-content{
+        gap: 60px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 550px){
+    .footer::after{
+        width: 470px;
+        height: 470px;
+    }
+
+    .footer::before{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .footer::after{
+        width: 370px;
+        height: 370px;
+    }
+
+    .footer::before{
+        width: 400px;
+        height: 400px;
+    }
+}

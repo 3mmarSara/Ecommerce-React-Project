@@ -5,19 +5,18 @@
 }
 
 .categories-section .categories-header{
-    margin-bottom: 50px;
     border-bottom: 2px solid #EDEDED;
 }
 
 .categories-section .categories-header h2{
     width: fit-content;
-    font-size: 34px;
+    font-size: 18px;
      font-family: 'Poppins',sans-serif;
     font-weight: 600;
     color: #666666;
     margin: 0px;
-    padding-bottom: 24px;
-    border-bottom: 5px solid #008ECC;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #008ECC;
 }
 
 .categories-section .categories-header h2 span{
@@ -36,9 +35,9 @@
     justify-content: center;
 }
 
-.swiperSlide img{
-   width: 50%;
-}
+.swiperSlide Link{
+    width: 50%;
+ }
 
 p{
     text-align: center;
@@ -49,5 +48,33 @@ p{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 1440px){
+    .categories-section{
+        margin: 50px 60px 0px 60px !important;
+   }
+   
+   
+   .categories-section .categories-header h2{
+       font-size: 20px;
+       padding-bottom: 20px;
+   }
+   
+}
+
+
+@media screen and (max-width: 991px){
+    .categories-section{
+        margin: 50px 60px 0px 60px !important;
+   }
+   
+   
+   .categories-section .categories-header h2{
+       font-size: 16px;
+       padding-bottom: 20px;
+   }
+   
 }
 

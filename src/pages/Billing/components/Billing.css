@@ -1,0 +1,181 @@
+.bill{
+    margin-top: 60px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.bill .billing-details{
+    width: calc((100% - 200px) / 2 );
+}
+
+.bill .billing-details .title{
+   font-size: 30px;
+   margin-bottom: 15px;
+}
+
+
+.bill .billing-details .fields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bill .billing-details .fields .field-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bill .billing-details .fields .field-container label{
+    color: #bebdbd;
+}
+
+.bill .billing-details .fields .field-container .field{
+    background-color: #F5F5F5;
+    border: none;
+    height: 50px;
+}
+
+
+
+.bill .checkoutBox{
+    width: calc((100% - 200px) / 2 );
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bill .checkoutBox .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 15px 0px;
+}
+
+.bill .checkoutBox .container .img-name{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.bill .checkoutBox .container .img-name img{
+    width: 50px;
+}
+
+.bill .checkoutBox  .line{
+    border-bottom: 1px solid rgba(169, 167, 167, 0.583);
+}
+
+.bill .checkoutBox  .radios-container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+
+}
+
+
+.bill .checkoutBox .bank-radio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill .checkoutBox .radio{
+    margin-right: 20px;
+}
+
+.bill .checkoutBox  .field-coupon{
+    margin: 20px 0px;
+    background-color: white;
+    padding-left: 20px;
+    width: 300px;
+    height: 56px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.bill .checkoutBox .palceOrderBtn{
+    background-color: #008ECC;
+    color: white;
+    width: 190px;
+    height: 56px;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+}
+
+.bill .checkoutBox .palceOrderBtn:hover{
+    background-color: #008fcca2;
+}
+
+.bill .checkoutBox .palceOrderBtn:active{
+    background-color: #008fccde;
+    font-size: 17px;
+}
+
+
+@media screen and (max-width: 1440px){
+
+    .bill{
+        padding: 0px 60px;
+    
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 1250px){
+
+    .bill .billing-details{
+        width: calc((100% - 100px) / 2 );
+    }
+
+    .bill .checkoutBox{
+        width: calc((100% - 100px) / 2 );
+    
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    .bill{
+        gap: 50px;
+    
+    }
+
+    .bill .billing-details{
+        width: 100%;
+    }
+
+    .bill .checkoutBox{
+        width: 100%;
+
+    
+    }
+
+}
+
+@media screen and (max-width: 450px){
+
+    .bill .checkoutBox  .field-coupon{
+        width: 250px;
+
+    }
+
+}
+
+@media screen and (max-width: 350px){
+
+    .bill .checkoutBox  .field-coupon{
+        width: 220px;
+
+    }
+
+}

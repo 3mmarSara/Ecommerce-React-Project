@@ -1,0 +1,194 @@
+.profile-container{
+    background-color: #ffffff;
+    margin: 0px 100px 0px 100px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+    border: 1px solid #a5a9ab3a;
+    border-radius: 20px;
+
+}
+
+.sidebar{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #008ECC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.sidebar .image-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.sidebar .image-name .img-container{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sidebar .image-name .img-container img{
+    width: 100%;
+    height: 100%; 
+    object-fit:cover;
+    border-radius: 50%;
+
+}
+
+.sidebar .image-name .name{
+    font-size: 26px;
+    color: white;
+}
+
+
+.sidebar .sidebar-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar .sidebar-container .profile-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(245, 242, 242);
+    font-size: 26px;
+    width: 30%;
+    padding: 15px 15px;
+    border: none;
+}
+
+.sidebar .sidebar-container .active{
+    border-radius: 25px 25px 0px 0px;
+    background-color: rgb(245, 242, 242);
+    color: #008ECC;
+    position: relative;
+}
+
+
+.sidebar .sidebar-container .active::before,
+.sidebar .sidebar-container .active::after {
+    content: '';
+    position: absolute;
+    bottom: 0px; 
+    width: 20px; 
+    height: 20px; 
+    background-color: transparent; 
+}
+
+.sidebar .sidebar-container .active::before {
+    left: -20px;
+    border-radius: 0px 0px 50% 0px;
+    box-shadow: 0px 10px 0 rgb(245, 242, 242); 
+
+}
+
+.sidebar .sidebar-container .active::after {
+    right: -20px;
+    border-radius: 0px 0px 0px 50%;
+    box-shadow: 0px 10px 0 rgb(245, 242, 242);
+}
+
+
+.profile-content{
+    background-color: rgb(245, 242, 242);
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.loader-color{
+    margin-top: 20px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 1440px){
+    .profile-container{
+        margin: 0px 60px 0px 60px;
+        margin-top: 60px;
+    
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    .sidebar .image-name .name{
+        font-size: 24px;
+    }
+
+    .sidebar .sidebar-container .profile-link{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    .sidebar .image-name .name{
+        font-size: 20px;
+    }
+
+    .sidebar .sidebar-container .profile-link{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .sidebar .image-name .name{
+        font-size: 18px;
+    }
+
+    .sidebar .sidebar-container .profile-link{
+        font-size: 14px;
+    }
+
+    .sidebar .sidebar-container .profile-link{
+
+        width: 40%;
+
+    }
+
+    .sidebar .image-name .img-container{
+        width: 100px;
+        height: 100px;
+    
+    }
+
+    
+.sidebar .sidebar-container .active::before,
+.sidebar .sidebar-container .active::after {
+    width: 10px; 
+    height: 10px; 
+}
+
+.sidebar .sidebar-container .active::before {
+    left: -10px;
+    box-shadow: 0px 5px 0 rgb(245, 242, 242); 
+
+}
+
+.sidebar .sidebar-container .active::after {
+    right: -10px;
+    box-shadow: 0px 5px 0 rgb(245, 242, 242);
+}
+
+
+}

@@ -1,0 +1,267 @@
+
+.category-header{
+    margin: 60px 100px 0px;
+    border-bottom: 2px solid #EDEDED;
+}
+
+ .category-header h2{
+    width: fit-content;
+    font-size: 18px;
+     font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    color: #666666;
+    margin: 0px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #008ECC;
+}
+
+.category-header h2 span{
+    color: #008ECC;
+}
+
+.productsContainer{
+    margin: 30px 100px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.productsContainer .product{
+    width: calc((100% - 80px)/ 5 );
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.productsContainer .product .love-show-box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 24px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #7D8184;
+
+}
+
+.productsContainer .product .love-show-box .eye-link{
+    color: #7D8184;
+    text-decoration: none;
+
+}
+
+.productsContainer .product .love-show-box .icon:hover{
+    color: #008ECC;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.productsContainer .product .image-container{
+    width: 100%;
+    text-align: center;
+    position: relative;
+      /* border-bottom: 1px solid #666666ac; */
+}
+
+.productsContainer .product .image-container .add-cart-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #008fccde;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(245, 245, 245);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: 0.5s;
+    display: none;
+    border: none;
+}
+
+.productsContainer .product .image-container .add-cart-btn .icon{
+     margin-right: 8px;
+}
+
+.productsContainer .product .image-container:hover .add-cart-btn {
+    display: flex;
+}
+
+
+.productsContainer .product .image-container .image{
+    /* width: 100%; */
+    height: 200px;
+    object-fit:fit;
+  
+}
+
+.productsContainer .product .image-container:hover .image {
+    transform: scale(0.95);
+}
+
+.product-name{
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    padding: 10px 10px 0px 10px;
+    flex-grow: 1;
+}
+
+.star-rating{
+    display: flex;
+    align-items: center;
+   
+}
+
+.price {
+    width: 100%;
+}
+
+.price div{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+   
+}
+
+.regular-price {
+    margin-left: 10px;
+    font-size: 20px;
+    
+    color: #008ECC;
+    font-family: 'Poppins', sans-serif;
+   
+}
+  
+  .final-price {
+    text-decoration: line-through #7D8184; 
+    font-size: 20px;
+    color: #7D8184;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+
+  .star-rating {
+    padding: 5px 0px 5px 10px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .star-filled {
+    color: #FFAD33;
+  }
+  
+  .star-empty {
+    color: #ccc; 
+  }
+
+
+  @media screen and (max-width: 1500px){
+    .productsContainer .product{
+        width: calc((100% - 60px)/ 4 );
+        padding: 10px;
+
+    }
+
+  }
+
+
+  @media screen and (max-width: 1440px){
+
+    
+    .category-header{
+        margin: 60px 60px 0px;
+    }
+
+    .category-header h2{
+        font-size: 22px;
+    }
+
+
+    .productsContainer{
+        margin: 30px 60px;
+    }
+
+  }
+
+  @media screen and (max-width: 1250px){
+    .productsContainer .product{
+        width: calc((100% - 40px)/ 3 );
+        padding: 10px;
+
+    }
+
+  }
+
+  @media screen and (max-width: 950px){
+
+    .category-header h2{
+        font-size: 18px;
+    }
+
+    .productsContainer .product{
+        width: calc((100% - 20px)/ 2 );
+        padding: 10px;
+
+    }
+
+    .product-name{
+        font-size: 16px;
+    }
+
+    .regular-price {
+        font-size: 20px;
+       
+    }
+      
+      .final-price {
+        font-size: 20px;
+      }
+    
+    
+      .star-rating {
+        font-size: 18px;
+      }
+
+  }
+
+
+  @media screen and (max-width: 700px){
+
+    .productsContainer{
+        justify-content: center;
+    }
+
+    .productsContainer .product{
+        width: 80%;
+        padding: 10px;
+
+    }
+
+  }
+
+
+  @media screen and (max-width: 550px){
+
+
+    .productsContainer .product{
+        width: 100%;
+        padding: 10px;
+
+    }
+
+  }
+  
+

@@ -1,0 +1,333 @@
+.signinForm{
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.signinForm .formContainer{
+    width: 100%;
+    /* background-color: rgb(156, 173, 174); */
+    margin: 100px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signinForm .formContainer .field-container{
+    width: 70%;
+    position: relative;
+}
+
+.signinForm .formContainer .field-container .icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(20%);
+    left: 18px;
+    color: #008ECC;
+}
+
+
+.signinForm .formContainer .field{
+    height: 50px;
+    margin-top: 30px;
+    width: 100%;
+    border: #008ECC solid 1px;
+    border-radius: 25px;
+    padding-left: 60px;
+    font-size: 18px;
+ }
+ 
+ .signinForm .formContainer .field:focus{
+    border: #008ECC solid 1px;
+ }
+
+
+.signinForm .formContainer .forgetPassLink{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+
+.signinForm .formContainer .forgetPassLink:hover{
+    color: #008ECC99;
+    font-size: 13px;
+}
+
+
+.signinForm .formContainer .signinBtn{
+    background-color: #008ECC;
+    color: white;
+    border: none;
+    width: 200px;
+    padding: 8px;
+    border-radius: 25px;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.signinForm .formContainer .signinBtn:hover{
+    background-color: #008fcca2;
+}
+
+.socialContainer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.socialContainer p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.socialContainer .iconsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socialContainer .iconsContainer .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     border: solid rgba(0, 0, 0, 0.6) 2px;
+     padding: 15px;
+     width: 25px;
+     height: 25px;
+     border-radius: 50%;
+     color: rgba(0, 0, 0, 0.6);
+     transition: 0.5s;
+}
+
+.socialContainer .iconsContainer .icon:hover{
+    color: #008ECC99;
+    border: solid #008ECC99 2px;
+}
+
+
+.signinForm::after{
+    content: "CUSTOMER SIGNIN";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    right: 0px;
+    top: 0px;
+    left:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #008ECC;
+    border-radius: 15px 15px 0px 0px;
+    color: white;
+    padding: 20px;
+    font-size: 34px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .signinForm{
+        width: 400px;
+        /* margin: auto;
+        margin-top: 50px;
+        border-radius: 15px; */
+    }
+    
+    .signinForm .formContainer{
+        margin: 80px 0px 40px 0px;
+    }
+    
+    .signinForm .formContainer .field-container{
+        width: 75%;
+    }
+    
+    .signinForm .formContainer .field-container .icon{
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(20%);
+        left: 18px;
+    }
+    
+    
+    .signinForm .formContainer .field{
+        height: 50px;
+        margin-top: 30px;
+        width: 100%;
+        border: #008ECC solid 1px;
+        border-radius: 25px;
+        padding-left: 60px;
+        font-size: 18px;
+     }
+     
+     .signinForm .formContainer .field:focus{
+        border: #008ECC solid 1px;
+     }
+    
+    
+    .signinForm .formContainer .forgetPassLink{
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .signinForm .formContainer .forgetPassLink:hover{
+        font-size: 13px;
+    }
+    
+    
+    .signinForm .formContainer .signinBtn{
+        width: 170px;
+        padding: 7px;
+        border-radius: 25px;
+        font-size: 20px;
+    }
+    
+    .signinForm .formContainer .signinBtn:hover{
+        background-color: #008fcca2;
+    }
+    
+    .socialContainer{
+        margin-top: 40px;
+        gap: 3px;
+    
+    }
+    
+    .socialContainer p{
+        font-size: 16px;
+    }
+    
+    .socialContainer .iconsContainer{
+        gap: 15px;
+    }
+    
+    .socialContainer .iconsContainer .icon{
+         border: solid rgba(0, 0, 0, 0.6) 2px;
+         padding: 15px;
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+         color: rgba(0, 0, 0, 0.6);
+         transition: 0.5s;
+    }
+    
+    .signinForm::after{
+        height: 80px;
+        padding: 18px;
+        font-size: 30px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px){
+
+    .signinForm{
+        width: 300px;
+        /* margin: auto;
+        margin-top: 50px;
+        border-radius: 15px; */
+    }
+    
+    .signinForm .formContainer{
+        margin: 80px 0px 40px 0px;
+    }
+    
+    .signinForm .formContainer .field-container{
+        width: 80%;
+    }
+    
+    .signinForm .formContainer .field-container .icon{
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(28%);
+        left: 18px;
+    }
+    
+    
+    .signinForm .formContainer .field{
+        height: 50px;
+        margin-top: 30px;
+        width: 100%;
+        border: #008ECC solid 1px;
+        border-radius: 25px;
+        padding-left: 55px;
+        font-size: 16px;
+     }
+     
+     .signinForm .formContainer .field:focus{
+        border: #008ECC solid 1px;
+     }
+    
+    
+    .signinForm .formContainer .forgetPassLink{
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .signinForm .formContainer .forgetPassLink:hover{
+        font-size: 13px;
+    }
+    
+    
+    .signinForm .formContainer .signinBtn{
+        width: 140px;
+        padding: 7px;
+        border-radius: 25px;
+        font-size: 20px;
+    }
+    
+    .socialContainer{
+        margin-top: 30px;
+        gap: 3px;
+    
+    }
+    
+    .socialContainer p{
+        font-size: 14px;
+    }
+    
+    .socialContainer .iconsContainer{
+        gap: 15px;
+    }
+    
+    .socialContainer .iconsContainer .icon{
+         padding: 10px;
+         width: 20px;
+         height: 20px;
+    }
+    
+    .signinForm::after{
+        height: 70px;
+        font-size: 22px;
+    }
+
+}
+
+
+
