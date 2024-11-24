@@ -13,9 +13,8 @@ A modern, responsive, and high-performance e-commerce application built with **R
 ## Technologies Used
 - **React**: For building the user interface.
 - **Vite**: A fast development environment for building React apps.
-- **CSS Modules/Tailwind**: For styling (mention what you're using).
 - **React Router**: For handling navigation.
-- **Axios/Fetch API**: For making API requests (if applicable).
+- **Axios/Fetch API**: For making API requests.
 
 ## Live Demo
 Check out the live demo here: [E-Commerce App](https://ecommerce-react-project-elvi.onrender.com/)
